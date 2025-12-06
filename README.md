@@ -11,7 +11,7 @@ I am using the Dow Jones Index Weekly Stock Dataset, originally released by Brow
 ### Source & Citation 
 Brown, M. S., Pelosi, M., & Dirska, H. (2013). Dynamic-radius Species-conserving Genetic Algorithm for the Financial Forecasting of Dow Jones Index Stocks. Machine Learning and Data Mining in Pattern Recognition, 7988, 27–41.
 
-### Dataset Size**
+### Dataset Size
 * 750 stock-week records
 * 16 features per record
 * No missing values  
