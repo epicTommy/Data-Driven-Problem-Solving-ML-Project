@@ -2,13 +2,16 @@
 ## 1. Header
 **Name**: Hyungkyu Lee  
 **Title:** Next-Week Risk Classification of Dow Jones Stocks Using Machine Learning  
-**Date:** Sat Dec 6, 2025
+**Date:** Sat Dec 6, 2025  
+https://github.com/epicTommy/Data-Driven-Problem-Solving-ML-Project/blob/main/Progress%20Report.md
+
+ **Wrote Original Report on Markdown so visiting GitHub Repo or looking at the .md file is recommended**
 
 ## 2. Dataset Selection
 I am using the Dow Jones Index Weekly Stock Dataset, originally released by Brown, Pelosi, and Dirska (2013). The dataset contains 750 weekly records of Dow Jones Industrial Average (DJIA) component stocks, with 16 attributes describing price movement, volume, dividend details, and next-week performance.
 
 ### Source & Citation 
-Brown, M. S., Pelosi, M., & Dirska, H. (2013). Dynamic-radius Species-conserving Genetic Algorithm for the Financial Forecasting of Dow Jones Index Stocks. Machine Learning and Data Mining in Pattern Recognition, 7988, 27–41.
+Brown, M. (2013). Dow Jones Index [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5788V.
 
 ### Dataset Size
 * 750 stock-week records
@@ -32,7 +35,7 @@ The goal of this project is to predict the risk level of a Dow Jones stock for t
 Predict whether a stock will fall into Low Risk, Medium Risk, or High Risk based on the expected price volatility for next week.
 
 ### Why This Problem Matters
-Short-term investment decisions rely not only on predicting returns but also managing risk. Retail and institutional investors seek to avoid high-volatility scenarios that may lead to sudden losses triggered by market speculation, macroeconomic news, or earnings events. A model that estimates next-week volatility risk provides clear, actionable decision support.
+Short-term investors must predict returns and manage risk. This model will help people make more informed stock-buying decisions.
 
 ### Target Classes
 Classes are formed by categorizing next week volatility (percentage range between high and low relative to open price).
@@ -65,14 +68,14 @@ $$
 ## 4. Progress Summary (1–2 pages)
 ### Completed Work:
 #### EDA findings
-![Distribution of Next Week Risk Categories](image.png)
+![Distribution of Next Week Risk Categories](images/image.png)
 The distribution is very imbalanced.
 
-![Distribution of Next Week Volatility](image-1.png)
+![Distribution of Next Week Volatility](images/image-1.png)
 
-![Volume by Next Week Risk Level](image-2.png)
+![Volume by Next Week Risk Level](images/image-2.png)
 
-![Correlation Heatmap](image-3.png)
+![Correlation Heatmap](images/image-3.png)
 
 #### Preliminary results & Initial Model Implemented
 ```
@@ -87,7 +90,7 @@ The distribution is very imbalanced.
    macro avg       0.39      0.41      0.39       216
 weighted avg       0.54      0.59      0.55       216
 ```
-![Random Forest Confusion Matrix](image-4.png)
+![Random Forest Confusion Matrix](images/image-4.png)
 
 ### Code Snippets
 #### Data loading & Changing Type
