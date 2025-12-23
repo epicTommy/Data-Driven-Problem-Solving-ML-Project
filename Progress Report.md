@@ -56,11 +56,10 @@ $$ V_{next} = \frac{High - Low}{Open} \times 100 $$
 Then the risk categories are defined as:
 
 $$
-Risk(V_{next}) =
+\text{Risk}(V_{\text{next}}) =
 \begin{cases}
-\text{Low Risk} & 0 \le V_{next} < 2 \\
-\text{Medium Risk} & 2 \le V_{next} \le 4 \\
-\text{High Risk} & V_{next} > 4
+\text{Low Risk} & 0 \le V_{\text{next}} < 4 \\
+\text{High Risk} & V_{\text{next}} \ge 4
 \end{cases}
 $$
 
